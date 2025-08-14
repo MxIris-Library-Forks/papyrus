@@ -5,16 +5,16 @@ import PackageDescription
 let package = Package(
     name: "papyrus",
     platforms: [
-        .iOS("13.0"),
-        .macOS("10.15"),
-        .tvOS("13.0")
+        .iOS(.v13),
+        .macOS(.v10_15),
+        .tvOS(.v13)
     ],
     products: [
         .executable(name: "Example", targets: ["Example"]),
         .library(name: "Papyrus", targets: ["Papyrus"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/swiftlang/swift-syntax", "509.1.0"..<"601.0.0"),
+        .package(url: "https://github.com/swiftlang/swift-syntax", "509.1.0"..<"602.0.0"),
         .package(url: "https://github.com/pointfreeco/swift-macro-testing", from: "0.5.0"),
     ],
     targets: [
